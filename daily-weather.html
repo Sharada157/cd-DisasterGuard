@@ -1,0 +1,96 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisasterGuard - Daily Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>DisasterGuard</h1>
+        <nav>
+        <div class="main-header"><h1><a href="./index.html">DisasterGuard</a></h1></div>
+        <div class="sub-header">  <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="daily-weather.html">Daily Weather</a></li>
+                <li><a href="weather-alerts.html">Disaster Alerts</a></li>
+                <li><a href="disaster-management.html">Disaster Management</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+        </nav></div>
+
+    </header>
+    <main>
+        <section id="daily-weather">
+            <h2>Daily Weather</h2>
+            <form id="location-form">
+                <label for="location">Enter your location:</label>
+                <input type="text" id="location" name="location" required>
+                <button type="button" onclick="saveLocation()">Save Location</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+
+        <div class="weather">
+            <img src="" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <i class="fa-solid fa-water"></i>
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content1">
+            <h3>DisasterGuard</h3>
+            <p>Your trusted source for disaster management and weather updates.</p>
+
+            <div class="socialmedias">
+                <div class="social"><a href="https://www.twitter.com" target="_blank"><i
+                            class="fa-brands fa-x-twitter"></i></a></div>
+                <div class="social"><a href="https://www.youtube.com" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a></div>
+                <div class="social"><a href="https://www.facebook.com" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a></div>
+                <div class="social"><a href="https://www.instagram.com" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DisasterGuard. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="weather.js"></script>
+</body>
+</html>

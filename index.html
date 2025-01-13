@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisasterGuard - Daily Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>DisasterGuard</h1>
+        <nav>
+            <ul>
+                <li><a href="daily-weather.html">Daily Weather</a></li>
+                <li><a href="weather-alerts.html">Disaster Alerts</a></li>
+                <li><a href="disaster-management.html">Disaster Management</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="main-header">
+            <h1><a href="./index.html">DisasterGuard</a></h1>
+        </div>
+        <div class="sub-header">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="daily-weather.html">Daily Weather</a></li>
+                    <li><a href="weather-alerts.html">Disaster Alerts</a></li>
+                    <li><a href="disaster-management.html">Disaster Management</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="daily-weather">
+            <h2>Daily Weather</h2>
+            <form id="location-form">
+                <label for="location">Enter your location:</label>
+                <input type="text" id="location" name="location" required>
+                <button type="button" onclick="saveLocation()">Save Location</button>
+            </form>
+        </section>
+    </main>
+    <div class="main-container">
+        <div class="wildfire">
+            <div class="img" id="div1"></div>
+            <div class="content">
+                <div class="head">
+                    <h2>Wildfire</h2>
+                </div>Wildfires are uncontrolled fires that spread rapidly through vegetation, fueled by dry conditions,
+                high temperatures, and strong winds. They can devastate forests, wildlife, and human settlements,
+                causing significant environmental and economic damage. Preventive measures and prompt response are
+                critical to reducing the risks and impacts of wildfires.
+            </div>
+        </div>
+        <div class="hurricane">
+            <div class="img" id="div2"></div>
+            <div class="content">
+                <div class="head">
+                    <h2>Hurricane</h2>
+                </div>Hurricanes are powerful tropical storms characterized by strong winds, heavy rain, and storm
+                surges, forming over warm ocean waters. They can cause widespread destruction to coastal areas,
+                including flooding, wind damage, and power outages. Preparedness, early warnings, and evacuation plans
+                are essential to minimize the impact on lives and property.
+            </div>
+        </div>
+        <div class="earthquake">
+            <div class="img" id="div3"></div>
+            <div class="content">
+                <div class="head">
+                    <h2>Earthquake</h2>
+                </div>Earthquakes commonly occur along the edges of tectonic plates, where they interact whether through
+                collision, sliding past each other, or pulling apart. These boundaries include transform, convergent,
+                and divergent plate boundaries.Fault Lines: Earthquakes are often triggered by the movement along
+                faults, which are fractures in the Earth's crust where blocks of rock have moved. Stress accumulation
+                and sudden release along these faults result in seismic activity.
+            </div>
+        </div>
+        <div class="flood">
+            <div class="img" id="div4"></div>
+            <div class="content">
+                <div class="head">
+                    <h2>Flood</h2>
+                </div>
+                Floods are natural disasters caused by excessive rainfall, river overflow, or coastal storms, leading to
+                water inundating normally dry land. They can result in significant damage to property, infrastructure,
+                and agriculture, and pose serious risks to human life. Effective flood management and early warning
+                systems are crucial to minimizing impact.
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>DisasterGuard</h3>
+            <p>Your trusted source for disaster management and weather updates.</p>
+
+            <div class="socialmedias">
+                <div class="social"><a href="https://www.twitter.com" target="_blank"><i
+                            class="fa-brands fa-x-twitter"></i></a></div>
+                <div class="social"><a href="https://www.youtube.com" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a></div>
+                <div class="social"><a href="https://www.facebook.com" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a></div>
+                <div class="social"><a href="https://www.instagram.com" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DisasterGuard. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+</html>
+
+
+
+
+
+
+
+
+
